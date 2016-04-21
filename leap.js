@@ -18,7 +18,7 @@ function Year(year) {
  */
 Year.prototype.isLeap = function (year) {
 
-  if ((year%100 && year%400) ===0 || year%4 ===0){
+  if ((year%100 && year%400) ===0) || (year%4 ===0){
       return "leap year";
 // (you have to use this.year)
 //
