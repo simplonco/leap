@@ -17,11 +17,12 @@ function Year(year) {
  * Whether given year is a leap year.
  */
 Year.prototype.isLeap = function () {
-//
-// YOUR CODE GOES HERE
+
+  if ((year%100 && year%400) ===0)|| (year%4 ===0){
+      return "leap year";
 // (you have to use this.year)
 //
-return "test";
+return this.year;
 }
 
 module.exports = Year;
