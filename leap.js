@@ -8,19 +8,21 @@
  */
 function Year(year) {
   this.year = year;
+}
+
 /**
  * Whether given year is a leap year.
  *
  * @return {boolean}
  * Whether given year is a leap year.
  */
-Year.prototype.isLeap = function (year) {
-
-  if ((year%100 && year%400) ===0) || (year%4 ===0){
-      return "leap year";
+Year.prototype.isLeap = function () {
+//
+// YOUR CODE GOES HERE
 // (you have to use this.year)
 //
-return this.year;
++Year.prototype.isLeap = function (year) {
++  if ((year%100 && year%400) ===0)|| (year%4 ===0){
++    return "leap year";
++  }
 }
-}
-module.exports = Year;
