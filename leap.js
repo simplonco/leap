@@ -21,7 +21,7 @@ Year.prototype.isLeap = function () {
 // YOUR CODE GOES HERE
 // (you have to use this.year)
 //
+return "test";
 }
 
 module.exports = Year;
-
