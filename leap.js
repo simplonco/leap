@@ -26,3 +26,5 @@ Year.prototype.isLeap = function () {
 +    return "leap year";
 +  }
 }
+
+module.exports = Year;
