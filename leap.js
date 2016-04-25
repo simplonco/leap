@@ -17,7 +17,7 @@ function Year(year) {
  * Whether given year is a leap year.
  */
 Year.prototype.isLeap = function (year) {
-  if ((year%100 && year%400) ===0)|| (year%4 ===0){
+  if (((year%100 ==0) && (year%400 ==0))|| (year%4 ==0)){
     return "leap year";
   }
 
