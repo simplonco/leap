@@ -11,7 +11,7 @@ function Year(year) {
 }
 
 Year.prototype.isLeap = function () {
-	if ((num % 4 == 0 && num % 100 != 0) && num % 400 != 0) {
+	if ( this.year % 4 == 0 && this.year % 100 != 0) && this.year % 400 != 0) {
 		console.log("boooooooo");
 	}
 }
