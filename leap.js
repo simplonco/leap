@@ -25,7 +25,10 @@ function Year(year) {
 
     Year.prototype.isLeap = function(year) {
         if ((year % 100 === 0 && year % 400 === 0) || (year % 4 === 0)) {
-            return "leap year";
+            return true;
+        }
+        else {
+          return false;
         }
     }
 
