@@ -8,6 +8,7 @@
  */
 function Year(year) {
   this.year = year;
+
 }
 
 /**
@@ -16,12 +17,41 @@ function Year(year) {
  * @return {boolean}
  * Whether given year is a leap year.
  */
-Year.prototype.isLeap = function () {
-//
-// YOUR CODE GOES HERE
-// (you have to use this.year)
-//
+var Year = function (year) {
+	
+  this.year = year;
+
+}
+Year.prototype.isLeap = function (year) {
+	 if ((year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0)){
+	 	return "leap year";
+	 } else {
+	 	return false;
+	 }
 }
 
-module.exports = Year;
+// begin test code
+var test = new Year();
+console.log(test.isLeap(1500));
 
+var test2 = new Year();
+console.log(test2.isLeap(2015));
+
+var test2 = new Year();
+console.log(test2.isLeap(2016));
+
+var test2 = new Year();
+console.log(test2.isLeap(1900));
+
+var test2 = new Year();
+console.log(test2.isLeap(1992));
+
+var test2 = new Year();
+console.log(test2.isLeap(1978));
+
+var test2 = new Year();
+console.log(test2.isLeap(2100));
+
+var test2 = new Year();
+console.log(test2.isLeap(2400));
+// end test code
