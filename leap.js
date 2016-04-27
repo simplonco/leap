@@ -23,10 +23,16 @@ function Year(year) {
  * Whether given year is a leap year.
  */
 Year.prototype.isLeap = function () {
-//
-// YOUR CODE GOES HERE
-// (you have to use this.year)
-//
+int main()
+{
+    int annee;
+    printf("Saisir une annee : ");
+    scanf("%d",&annee);
+        if(annee % 4 == 0 && annee % 100 != 0 || annee % 400 == 0)
+        printf("%d est une annee bissextile\n", annee);
+        else
+        printf("%d n'est pas une annee bissextile\n", annee);
+        return 0;
 }
-
+}
 module.exports = Year;
