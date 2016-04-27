@@ -20,8 +20,7 @@ Year.prototype.isLeap = function () {
 //
 // YOUR CODE GOES HERE
 // (you have to use this.year)
-//{      
-  this.number = number;    
+//    
     return isDivisibleBy(400) || ( isDivisibleBy(4) && !isDivisibleBy(100));
   }
   function isDivisibleBy(a_number) {
