@@ -26,7 +26,15 @@ Year.prototype.isLeap = function () {
 //
 // YOUR CODE GOES HERE
 // (you have to use this.year)
-//
+//    
+    return isDivisibleBy(400) || ( isDivisibleBy(4) && !isDivisibleBy(100));
+  }
+  function isDivisibleBy(a_number) {
+    return this.number % a_number == 0
+  }        
+  return isLeap();
+}
+
 }
 
 module.exports = Year;
