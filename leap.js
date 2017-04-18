@@ -13,7 +13,7 @@
  * Numeric year.
  */
 function Year(year) {
-  this.year = year;
+    this.year = year;
 }
 
 /**
@@ -22,11 +22,9 @@ function Year(year) {
  * @return {boolean}
  * Whether given year is a leap year.
  */
-Year.prototype.isLeap = function () {
-//
-// YOUR CODE GOES HERE
-// (you have to use this.year)
-//
+Year.prototype.isLeap = function() {
+    var year = this.year;
+    return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
 }
 
 module.exports = Year;
